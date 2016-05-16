@@ -28,7 +28,7 @@
 .greenColor         { color: var(--green); }
 .greenBorder        { border-color: var(--green); }
 .greenBackground    { background-color: var(--green); }
-.greenFill          { fill: var(--emerald); }
+.greenFill          { fill: var(--green); }
 
 .yellowColor        { color: var(--yellow); }
 .yellowBorder       { border-color: var(--yellow); }
