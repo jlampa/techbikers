@@ -62,7 +62,7 @@ module.exports = function(options) {
 
   var stylesheetLoaders = {
     "css": [cssLoader, "postcss"],
-    "scss|sass": [cssLoader, "postcss", sassLoader]
+    "scss|sass": ["css", "postcss", sassLoader]
   };
 
   var additionalLoaders = [];

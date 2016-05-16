@@ -3,6 +3,7 @@ module.exports = [
     longTermCaching: true,
     separateStylesheet: true,
     minimize: true,
-    production: true
+    production: true,
+    cssModules: true
   })
 ];
