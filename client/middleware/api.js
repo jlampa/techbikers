@@ -13,6 +13,7 @@ export const chapterSchema = new Schema("chapter");
 export const sponsorSchema = new Schema("sponsor");
 export const fundraiserSchema = new Schema("fundraiser");
 export const rideRegistrationSchema = new Schema("rideRegistration");
+export const rideSponsorSchema = new Schema("rideSponsor");
 
 userSchema.define({
   fundraisers: arrayOf(fundraiserSchema)
@@ -21,6 +22,10 @@ userSchema.define({
 rideSchema.define({
   chapter: chapterSchema,
   riders: arrayOf(userSchema)
+});
+
+sponsorSchema.define({
+  rides: arrayOf(rideSponsorSchema)
 });
 
 export default store => next => action => {
